@@ -13,10 +13,10 @@ local M = {
 	string = "#aa9988",
 	type = "#777755",
 	visual = "#333333",
-	accent = "#5f8787",
-	diag_red = "#5f8787",
+	accent = "#a89a72",
+	diag_red = "#a89a72",
 	diag_blue = "#999999",
-	diag_yellow = "#5f8787",
+	diag_yellow = "#a89a72",
 	diag_green = "#6e4c4c",
 }
 

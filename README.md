@@ -42,7 +42,7 @@ with `:colorscheme noir`.
 | `string`   | `#aa9988` | Strings                       |
 | `type`     | `#777755` | Types                         |
 | `visual`   | `#333333` | Visual selection, popup bg    |
-| `accent`   | `#5f8787` | Accent, special, diagnostics  |
+| `accent`   | `#a89a72` | Accent, special, diagnostics  |
 
 ## Supported
 
