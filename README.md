@@ -9,7 +9,7 @@ Requires `nvim 0.9+`.
 
 ```lua
 {
-  "taha/noir.nvim",
+  "tahasadough/noir.nvim",
   priority = 1000,
   config = true,
   opts = {},
