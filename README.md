@@ -44,25 +44,6 @@ with `:colorscheme noir`.
 | `visual`   | `#333333` | Visual selection, popup bg    |
 | `accent`   | `#8a9a7b` | Accent, special, diagnostics  |
 
-## Supported
-
-- Treesitter highlighting
-- LSP + diagnostics
-- Git signs and diffs
-- [blink.cmp](https://github.com/Saghen/blink.cmp) (menu, docs, signature help, all kind groups)
-- [snacks.nvim](https://github.com/folke/snacks.nvim) (picker, explorer, dashboard, notifier, terminal, scratch, indent, zen)
-- [noice.nvim](https://github.com/folke/noice.nvim)
-- [which-key.nvim](https://github.com/folke/which-key.nvim)
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua), [bufferline](https://github.com/akinsho/bufferline.nvim)
-- [harpoon](https://github.com/ThePrimeagen/harpoon)
-- [flash.nvim](https://github.com/folke/flash.nvim)
-- [mini.*](https://github.com/echasnovski/mini.nvim) (ai, icons, pairs, surround)
-- [illuminate](https://github.com/RRethy/vim-illuminate)
-- [treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
-- [neotest](https://github.com/nvim-neotest/neotest)
-- cmp (legacy), Lualine
-
 ## License
 
 MIT
