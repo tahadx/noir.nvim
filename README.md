@@ -1,6 +1,6 @@
 # Noir
 
-A dark Neovim colorscheme. Pure black background, warm grey text, warm gold
+A dark Neovim colorscheme. Pure black background, warm grey text, muted sage
 accents.
 
 ## Installation
@@ -42,7 +42,7 @@ with `:colorscheme noir`.
 | `string`   | `#aa9988` | Strings                       |
 | `type`     | `#777755` | Types                         |
 | `visual`   | `#333333` | Visual selection, popup bg    |
-| `accent`   | `#a89a72` | Accent, special, diagnostics  |
+| `accent`   | `#8a9a7b` | Accent, special, diagnostics  |
 
 ## Supported
 
