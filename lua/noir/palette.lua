@@ -46,7 +46,7 @@ local variants = {
 }
 
 function M.get(variant)
-	variant = variant or "dawn"
+	variant = variant or vim.g.noir_variant or "dawn"
 	return variants[variant] or variants["dawn"]
 end
 

@@ -13,22 +13,27 @@ function M.load()
 	end
 	vim.o.termguicolors = true
 	vim.g.colors_name = "noir"
-	vim.g.noir_variant = M.opts.variant
 
-	require("noir.highlights").setup(M.opts.variant)
+	local variant = M.opts.variant
+			or vim.g.noir_variant
+		or "dawn"
+	vim.g.noir_variant = variant
+
+	require("noir.highlights").setup(variant)
 
 	if vim.fn.exists("command") ~= 2 then
 		vim.api.nvim_create_user_command("NoirVariant", function(cmd)
-			local variant = cmd.args
-			if variant ~= "pure_black" and variant ~= "dawn" then
+			local v = cmd.args
+			if v ~= "pure_black" and v ~= "dawn" then
 				vim.notify("Noir: valid variants are 'pure_black' and 'dawn'", vim.log.levels.ERROR)
 				return
 			end
-			M.opts.variant = variant
+			M.opts.variant = v
+			vim.g.noir_variant = v
 			vim.cmd("colorscheme noir")
-			vim.notify("Noir: switched to " .. variant)
+			vim.notify("Noir: switched to " .. v)
 		end, { nargs = 1, complete = function()
-			return { "pure_black", "dawn" }
+			return { "dawn", "pure_black" }
 		end })
 	end
 end
