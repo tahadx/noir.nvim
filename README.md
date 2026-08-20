@@ -12,7 +12,7 @@ Requires `nvim 0.9+`.
   "tahadx/noir.nvim",
   priority = 1000,
   config = true,
-  opts = {},
+  opts = { variant = "dawn" },
 }
 ```
 
@@ -20,6 +20,20 @@ Then set the colorscheme:
 
 ```lua
 vim.cmd.colorscheme("noir")
+```
+
+For LazyVim, add both the plugin and colorscheme:
+
+```lua
+{
+  "tahadx/noir.nvim",
+  priority = 1000,
+  opts = { variant = "dawn" },
+},
+{
+  "LazyVim/LazyVim",
+  opts = { colorscheme = "noir" },
+},
 ```
 
 ## Variants
@@ -64,6 +78,8 @@ return {
   },
 }
 ```
+
+Both `opts` and `colorscheme` are required.
 
 ### vim.g
 
