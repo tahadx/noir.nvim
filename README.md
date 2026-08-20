@@ -26,10 +26,10 @@ vim.cmd.colorscheme("noir")
 
 Noir ships with two background variants:
 
-| Variant      | `bg`       | Description                        |
-| ------------ | ---------- | ---------------------------------- |
-| `pure_black` | `#000000`  | Default. Pure black. |
-| `dawn`       | `#1c1c1c`  | Softer dark.                       |
+| Variant      | `bg`       | Description          |
+| ------------ | ---------- | -------------------- |
+| `dawn`       | `#0c0b0c`  | Default. Soft black. |
+| `pure_black` | `#000000`  | Pure black.          |
 
 Set the variant in your plugin opts:
 
@@ -37,11 +37,18 @@ Set the variant in your plugin opts:
 {
   "tahadx/noir.nvim",
   priority = 1000,
-  opts = { variant = "dawn" },
+  opts = { variant = "pure_black" },
 }
 ```
 
-If no variant is set, `pure_black` is used.
+Or switch at runtime with the command:
+
+```vim
+:NoirVariant dawn
+:NoirVariant pure_black
+```
+
+Tab completion is supported.
 
 ## Customization
 
