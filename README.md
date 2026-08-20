@@ -29,7 +29,7 @@ Noir ships with two background variants:
 | Variant      | `bg`       | Description                        |
 | ------------ | ---------- | ---------------------------------- |
 | `pure_black` | `#000000`  | Default. Pure black. |
-| `dawn`       | `#1c1c1c`  | Softer dark, easier on the eyes.   |
+| `dawn`       | `#1c1c1c`  | Softer dark.                       |
 
 Set the variant in your plugin opts:
 
