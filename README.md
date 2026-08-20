@@ -31,17 +31,51 @@ Noir ships with two background variants:
 | `dawn`       | `#0c0b0c`  | Default. Soft black. |
 | `pure_black` | `#000000`  | Pure black.          |
 
-Set the variant in your plugin opts:
+### LazyVim
 
 ```lua
-{
-  "tahadx/noir.nvim",
-  priority = 1000,
-  opts = { variant = "pure_black" },
+-- Dawn (default)
+return {
+  {
+    "tahadx/noir.nvim",
+    priority = 1000,
+    opts = { variant = "dawn" },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "noir",
+    },
+  },
+}
+
+-- Pure black
+return {
+  {
+    "tahadx/noir.nvim",
+    priority = 1000,
+    opts = { variant = "pure_black" },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "noir",
+    },
+  },
 }
 ```
 
-Or switch at runtime with the command:
+### vim.g
+
+Set before plugins load:
+
+```lua
+vim.g.noir_variant = "dawn"     -- or "pure_black"
+```
+
+### Command
+
+Switch at runtime:
 
 ```vim
 :NoirVariant dawn
