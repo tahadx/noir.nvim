@@ -1,7 +1,7 @@
 # Noir
 
-A dark Neovim colorscheme. Pure black background, warm grey text, muted sage
-accents.
+A dark Neovim colorscheme. Warm grey text, muted sage accents. Ships with
+two background variants.
 
 ## Installation
 
@@ -21,6 +21,27 @@ Then set the colorscheme:
 ```lua
 vim.cmd.colorscheme("noir")
 ```
+
+## Variants
+
+Noir ships with two background variants:
+
+| Variant      | `bg`       | Description                        |
+| ------------ | ---------- | ---------------------------------- |
+| `pure_black` | `#000000`  | Default. Pure black. |
+| `dawn`       | `#1c1c1c`  | Softer dark, easier on the eyes.   |
+
+Set the variant in your plugin opts:
+
+```lua
+{
+  "tahadx/noir.nvim",
+  priority = 1000,
+  opts = { variant = "dawn" },
+}
+```
+
+If no variant is set, `pure_black` is used.
 
 ## Customization
 

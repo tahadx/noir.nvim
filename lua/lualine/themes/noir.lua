@@ -1,4 +1,4 @@
-local P = require("noir.palette")
+local P = require("noir.palette").get(vim.g.noir_variant or "pure_black")
 
 local M = {}
 

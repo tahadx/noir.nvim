@@ -1,12 +1,11 @@
-local P = require("noir.palette")
-
 local function set(group, opts)
 	vim.api.nvim_set_hl(0, group, opts)
 end
 
 local M = {}
 
-function M.setup()
+function M.setup(variant)
+	local P = require("noir.palette").get(variant)
 	local bg = P.bg
 	local fg = P.fg
 
