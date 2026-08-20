@@ -46,8 +46,8 @@ local variants = {
 }
 
 function M.get(variant)
-	variant = variant or "pure_black"
-	return variants[variant] or variants["pure_black"]
+	variant = variant or "dawn"
+	return variants[variant] or variants["dawn"]
 end
 
 return M

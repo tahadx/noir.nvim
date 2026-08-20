@@ -1,6 +1,6 @@
 local M = {}
 
-M.opts = { variant = "pure_black" }
+M.opts = { variant = "dawn" }
 
 function M.setup(opts)
 	M.opts = vim.tbl_extend("force", M.opts, opts or {})
